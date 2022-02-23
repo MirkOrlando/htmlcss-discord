@@ -76,7 +76,7 @@ a {
 /* utility */
 
 :root {
-    --font_family: Montserrat, sans-serif;;
+    --font_family: 'Montserrat', sans-serif;;
     --color_text_header: white;
     --bgcolor_rowcolored: #F6F6F6;
     --color_dark: #23272A;
@@ -94,8 +94,8 @@ a {
     clear: both;
 }
 
-.vh_80 {
-    height: 80vh;
+.vh_70 {
+    height: 70vh;
 }
 
 .vh_160 {
@@ -171,17 +171,51 @@ a {
     background-repeat: no-repeat;
 }
 
+/* section */
+
 #site-header section {
-    width: 60%;
+    width: 685px;
     margin: auto;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: var(--color_text_header);
 }
 
-/* #site-main */
+#site-header section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#site-header section p {
+    font-weight: bold;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#site-header .light, #site-header .dark {
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 30px;
+    margin: 0 1rem;
+}
+
+#site-header .light {
+    color: var(--color_dark);
+    background-color: var(--color_text_header);
+}
+
+#site-header .dark {
+    color: var(--color_text_header);
+    background-color: var(--color_dark);
+}
+
+/********* 
+#site-main
+**********/
 
 #site-main .colored {
     background-color: var(--bgcolor_rowcolored);
