@@ -92,6 +92,7 @@ svg {
     --color_border_row: #48557D;
     --bgcolor_nav: #3161E0;
     --bgcolor_alternative: #8EA1E1;
+    --color_title_footer: #7289DA;
 }
 
 .rotate {
@@ -113,7 +114,7 @@ svg {
 }
 
 .vh_160 {
-    height: 160vh;
+    height: 170vh;
 }
 
 .ta_center {
@@ -122,6 +123,10 @@ svg {
 
 .w_100 {
     width: 100%;
+}
+
+.mtop_1 {
+    margin-top: 1rem;
 }
 
 /************
@@ -323,6 +328,11 @@ svg {
 
 #site-footer {
     background-color: var(--color_dark);
+    color: var(--color_text_header);
+}
+
+#site-footer h2, #site-footer h6 {
+    color: var(--color_title_footer);
 }
 
 #site-footer .row .col-sm, #site-footer .row .col-lg {
