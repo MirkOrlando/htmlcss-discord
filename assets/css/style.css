@@ -38,6 +38,10 @@ border color footer > div: #48557D;
     background-color: yellow;
 }
 
+.debug .row.colored {
+
+}
+
 /* common */
 
 * {
@@ -50,6 +54,12 @@ border color footer > div: #48557D;
     height: 80vh;
     width: 1200px;
     margin: auto;
+}
+
+/* utility */
+
+:root {
+    --bgcolor_rowcolored: #F6F6F6;
 }
 
 .p_relative {
@@ -90,7 +100,7 @@ border color footer > div: #48557D;
     width: 25%;
 }
 
-.row.uncolored col.lg{
+.row.uncolored .col-lg {
     margin-right: 5%;
 }
 
@@ -98,4 +108,10 @@ border color footer > div: #48557D;
     padding: 10% 0;
 }
 
+.row.colored {
+    background-color: var(--bgcolor_rowcolored);
+}
 
+.row.colored .col-lg {
+    margin-left: 5%;
+}
