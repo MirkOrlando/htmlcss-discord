@@ -26,6 +26,18 @@ border color footer > div: #48557D;
     background-color: aqua;
 }
 
+.debug .col-lg, .debug .col-sm {
+    height: 50vh;
+}
+
+.debug .col-lg {
+    background-color: greenyellow;
+}
+
+.debug .col-sm {
+    background-color: yellow;
+}
+
 /* common */
 
 * {
@@ -35,6 +47,7 @@ border color footer > div: #48557D;
 }
 
 .container {
+    height: 80vh;
     width: 1200px;
     margin: auto;
 }
@@ -43,14 +56,20 @@ border color footer > div: #48557D;
     position: relative;
 }
 
-/* #site-header */
-
-#site-header {
-    height: 100vh;
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
+/* #site-header */
+
+/* #site-header {
+    height: 100vh;
+} */
+
 #site-header section {
-    width: 40%;
+    width: 60%;
     margin: auto;
     text-align: center;
     position: absolute;
@@ -59,5 +78,24 @@ border color footer > div: #48557D;
     transform: translate(-50%, -50%);
 }
 
+.col-lg, .col-sm {
+    float: left;
+}
+
+.col-lg {
+    width: 70%;
+}
+
+.col-sm {
+    width: 25%;
+}
+
+.row.uncolored col.lg{
+    margin-right: 5%;
+}
+
+.row .container {
+    padding: 10% 0;
+}
 
 
