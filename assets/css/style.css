@@ -91,6 +91,7 @@ svg {
     --color_dark: #23272A;
     --color_border_row: #48557D;
     --bgcolor_nav: #3161E0;
+    --bgcolor_alternative: #8EA1E1;
 }
 
 .rotate {
@@ -113,6 +114,14 @@ svg {
 
 .vh_160 {
     height: 160vh;
+}
+
+.ta_center {
+    text-align: center;
+}
+
+.w_100 {
+    width: 100%;
 }
 
 /************
@@ -202,11 +211,12 @@ svg {
 }
 
 #site-header .light, #site-header .dark {
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 500;
     padding: 0.75rem 1.75rem;
     border: none;
     border-radius: 30px;
-    margin: 0 1rem;
+    margin: 0px 1rem;
 }
 
 #site-header .light {
@@ -251,12 +261,12 @@ svg {
     margin-left: 5%;
 }
 
-#site-main .col-sm h1 {
+#site-main h1 {
     font-size: 3rem;
     margin: 1.5rem 0;
 }
 
-#site-main .col-sm p {
+#site-main p {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 2rem;
@@ -278,6 +288,35 @@ svg {
 
 #item3 {
     background-image: url(../img/item3.svg);
+}
+
+.text {
+    width: 94%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+#site-main .alternative {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0.75rem 1.75rem;
+    border: none;
+    border-radius: 30px;
+    margin: 0px 1rem;
+    background-color: var(--bgcolor_alternative);
+    color: var(--color_text_header);
+}
+
+#site-main section{
+    width: 510px;
+    margin: auto;
+}
+
+.stars {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2.15rem;
 }
 
 /* #site-footer */
