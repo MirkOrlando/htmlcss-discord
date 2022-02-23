@@ -56,21 +56,32 @@ border color footer > div: #48557D;
 }
 
 .container {
-    height: 80vh;
     width: 1200px;
     margin: auto;
+    font-family: var(--font_family);
 }
 
 .row {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* utility */
 
 :root {
+    --font_family: 'Montserrat', sans-serif;;
+    --color_text_header: white;
     --bgcolor_rowcolored: #F6F6F6;
-    --colore_dark: #23272A;
+    --color_dark: #23272A;
     --color_border_row: #48557D;
+    --bgcolor_nav: #3161E0;
 }
 
 .p_relative {
@@ -83,8 +94,8 @@ border color footer > div: #48557D;
     clear: both;
 }
 
-.colored {
-    background-color: var(--bgcolor_rowcolored);
+.vh_80 {
+    height: 80vh;
 }
 
 .vh_160 {
@@ -93,9 +104,59 @@ border color footer > div: #48557D;
 
 /* #site-header */
 
-/* #site-header {
-    height: 100vh;
-} */
+#site-nav a {
+    color: var(--color_text_header);
+}
+
+#site-nav li {
+    display: inline-block;
+}
+
+#site-nav > ul {
+    line-height: 34px;
+    vertical-align: middle;
+}
+
+#site-nav, .label.logo {
+    float: left;
+}
+
+.label.log-in {
+    float: right;
+}
+
+#site-nav {
+    text-align: center;
+    width: 80%;
+}
+
+.label {
+    width: 10%;
+}
+
+.label.log-in button {
+    color: var(--color_dark);
+    background-color: var(--color_text_header);
+    font-weight: bold;
+    padding: 0.5rem 0;
+    width: 70px;
+    border: none;
+    border-radius: 30px;
+}
+
+.label, #site-nav {
+    display: inline-block;
+}
+
+#site-header .row.colored {
+    background-color: var(--bgcolor_nav);
+}
+
+#site-header .row.bg_img {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 #site-header section {
     width: 60%;
@@ -108,6 +169,10 @@ border color footer > div: #48557D;
 }
 
 /* #site-main */
+
+#site-main .colored {
+    background-color: var(--bgcolor_rowcolored);
+}
 
 #site-main .col-lg, .col-sm {
     float: left;
@@ -136,7 +201,7 @@ border color footer > div: #48557D;
 /* #site-footer */
 
 #site-footer {
-    background-color: var(--colore_dark);
+    background-color: var(--color_dark);
 }
 
 #site-footer .row .col-sm, #site-footer .row .col-lg {
