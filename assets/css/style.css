@@ -76,7 +76,7 @@ a {
 /* utility */
 
 :root {
-    --font_family: 'Montserrat', sans-serif;;
+    --font_family: Montserrat, sans-serif;;
     --color_text_header: white;
     --bgcolor_rowcolored: #F6F6F6;
     --color_dark: #23272A;
@@ -102,10 +102,23 @@ a {
     height: 160vh;
 }
 
-/* #site-header */
+/************
+ #site-header
+*************/
+
+/* #site-nav */
+
+#site-header .row.colored {
+    padding: 1rem 0 2.5rem;
+}
 
 #site-nav a {
     color: var(--color_text_header);
+    padding: 0 1rem;
+}
+
+#site-nav a:hover{
+    font-weight: bold;
 }
 
 #site-nav li {
