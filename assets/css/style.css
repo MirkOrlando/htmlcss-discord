@@ -411,6 +411,8 @@ img.flag {
 
 div.language-selection {
     margin-top: 1rem;
+    align-items: center;
+    gap: 2px;
 }
 
 #site-footer .sign-in {
