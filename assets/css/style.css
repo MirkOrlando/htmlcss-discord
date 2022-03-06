@@ -156,6 +156,12 @@ svg {
     color: var(--darker);
 }
 
+.btn-alternative {
+    padding: 0.75rem 1.75rem;
+    background-color: var(--bgcolor_alternative);
+    color: var(--color_text_header);
+}
+
 
 /* #region font-size */
 
@@ -163,11 +169,19 @@ svg {
     font-size: 14px;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
+
 
 /* #endregion font-size */
 
 
 /* #region padding */
+
+.p-1 {
+    padding: 1rem;
+}
 
 .pb-6 {
     padding-bottom: 6rem;
@@ -180,12 +194,10 @@ svg {
 /* #endregion utility */
 
 
-/************
- #site-header
-*************/
+/* #region site-header */
 
 
-/* #site-nav */
+/* #region site-nav */
 
 #site-header .nav-bar {
     background-color: var(--bgcolor_nav);
@@ -220,7 +232,10 @@ svg {
 }
 
 
-/* section */
+/* #endregion site-nav */
+
+
+/* #region section */
 
 #site-header section {
     width: 600px;
@@ -259,9 +274,13 @@ svg {
 }
 
 
-/********* 
-#site-main
-**********/
+/* #endregion section */
+
+
+/* #endregion site-header */
+
+
+/* #region site-main */
 
 #site-main .colored {
     background-color: var(--bgcolor_rowcolored);
@@ -330,13 +349,6 @@ svg {
     padding: 4rem 0;
 }
 
-#site-main .btn-alternative {
-    font-size: 1rem;
-    padding: 0.75rem 1.75rem;
-    background-color: var(--bgcolor_alternative);
-    color: var(--color_text_header);
-}
-
 #site-main section {
     width: 510px;
     margin: auto;
@@ -350,15 +362,19 @@ svg {
 }
 
 
-/* #site-footer */
+/* #endregion site-main */
 
-#site-footer {
+
+/* #region site-footer */
+
+#site-footer,
+#site-footer a {
     background-color: var(--color_dark);
     color: var(--color_text_header);
 }
 
 #site-footer h2,
-#site-footer h6 {
+#site-footer h4 {
     color: var(--color_title_footer);
 }
 
@@ -382,9 +398,30 @@ svg {
 
 #site-footer .row .col-lg {
     margin: 0 5%;
+    justify-content: space-evenly;
+}
+
+#site-footer ul>li {
+    padding: 0 0 0.5rem;
+}
+
+img.flag {
+    width: 20px;
+}
+
+div.language-selection {
+    margin-top: 1rem;
+}
+
+#site-footer .sign-in {
+    padding: 2rem 0 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-footer .sign-in>.btn {
+    padding: 10px 12px;
 }
 
 
-/* .sign-in {
-    margin-top: 2rem;
-} */
+/* #endregion site-footer */
