@@ -147,9 +147,9 @@ svg {
 }
 
 .btn {
-    color: var(--color_dark);
     background-color: var(--color_text_header);
     padding: 10px 12px;
+    font-weight: 500;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -167,6 +167,16 @@ svg {
 /* #endregion font-size */
 
 
+/* #region padding */
+
+.pb-6 {
+    padding-bottom: 6rem;
+}
+
+
+/* #endregion padding */
+
+
 /* #endregion utility */
 
 
@@ -180,7 +190,7 @@ svg {
 #site-header .nav-bar {
     background-color: var(--bgcolor_nav);
     color: var(--color_text_header);
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
 }
@@ -196,7 +206,7 @@ svg {
 
 .nav-bar ul {
     width: 50%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #site-header .row.colored {
@@ -213,9 +223,10 @@ svg {
 /* section */
 
 #site-header section {
-    width: 709px;
+    width: 600px;
     margin: auto;
-    padding: 7rem 0;
+    padding-top: 6rem;
+    padding-bottom: 10.75rem;
     text-align: center;
     color: var(--color_text_header);
 }
@@ -226,27 +237,23 @@ svg {
 }
 
 #site-header section p {
-    font-weight: 500;
     line-height: 1.75rem;
     margin-bottom: 1.5rem;
 }
 
-#site-header .light,
-#site-header .dark {
-    font-size: 17px;
-    font-weight: 500;
-    padding: 0.75rem 1.75rem;
-    border: none;
-    border-radius: 30px;
-    margin: 0px 1rem;
+#site-header .btn-light,
+#site-header .btn-dark {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0px 0.5rem;
 }
 
-#site-header .light {
+#site-header .btn-light {
     color: var(--color_dark);
     background-color: var(--color_text_header);
 }
 
-#site-header .dark {
+#site-header .btn-dark {
     color: var(--color_text_header);
     background-color: var(--color_dark);
 }
@@ -323,13 +330,9 @@ svg {
     padding: 4rem 0;
 }
 
-#site-main .alternative {
-    font-size: 17px;
-    font-weight: 500;
+#site-main .btn-alternative {
+    font-size: 1rem;
     padding: 0.75rem 1.75rem;
-    border: none;
-    border-radius: 30px;
-    margin: 0px 1rem;
     background-color: var(--bgcolor_alternative);
     color: var(--color_text_header);
 }
@@ -381,6 +384,7 @@ svg {
     margin: 0 5%;
 }
 
-.sign-in {
+
+/* .sign-in {
     margin-top: 2rem;
-}
+} */
